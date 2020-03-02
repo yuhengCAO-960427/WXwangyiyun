@@ -1,0 +1,20 @@
+<view class="logo">
+        <image class="logo_img" src="../../images/logo.png"></image>
+        <text class="logo_txt" >Music</text>
+          
+</view>
+<view  class="login_tel">
+    <input class="tel"   bindinput="getInput" value="{{telValue}}" type="text" placeholder="邮箱/手机号"/>
+</view>
+<view  class="login_password">
+    <input class="pas" bindinput="getpassword" value="{{passwordValue}}" type="password" placeholder="输入密码" />
+</view>
+<view class="login"  bindtap="login">
+    <text class="icon-arrow-right2"></text>
+</view>
+<view class="forget_pas">
+    忘记密码
+</view>
+  
+
+

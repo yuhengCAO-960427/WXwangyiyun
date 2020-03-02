@@ -1,0 +1,2 @@
+<mp-searchbar placeholder="请输入关键字搜索" bindselectresult="selectResult"  search="{{search}}"></mp-searchbar>
+<view  class="data" wx:if="{{flag}}" wx:for="{{list}}" bindtap="getMusic" wx:key="item" >{{index+1}}.{{item.first}}</view>

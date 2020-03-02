@@ -1,0 +1,53 @@
+<scroll-view>
+    <view class="box">
+        <view class="box_header">
+            <view class="header_img">
+                <image class="img" src="{{url}}" alt=""></image>
+                <text class="icon-play1">{{num/10000}}万</text>
+            </view>
+            <view class="herder_txt">
+                <text class="conment_txt">{{herderTxt}}</text>
+                <view class="conment_img">
+                    <image class="conment_imgs" src="{{headerUrl}}" />
+                    <text class="conment_txts">{{name}}</text>
+                </view>
+                <text class="comment">{{txt}}</text>
+            </view>
+        </view>
+        <view class="fx">
+            <view class="fx_bar">
+                <text class="fx_txt  icon-message-circle"></text>
+                {{msg_number}}
+            </view>
+            <view class="fx_bar">
+                <text class="fx_txt  icon-shuffle"></text>
+                {{fx_number}}
+            </view>
+            <view class="fx_bar">
+                <text class="fx_txt  icon-folder-download"></text>
+                下载
+            </view>
+            <view class="fx_bar">
+                <text class="fx_txt  icon-list2"></text>
+                多选
+            </view>
+        </view>
+        <view class="box_body">
+            <view class="start">
+                <text class="icon-play2"></text>
+                <text class="start_txt">播放全部</text>
+                <text class="start_all">(共{{all_number}}首)</text>
+                <text class="start_sc    icon-heart-outlined">收藏({{sc_number}}万)</text>
+            </view>
+            <view class="body_conment" wx:for="{{list}}" wx:key="item.id">
+                <text class="number">{{index+1}}</text>
+                <view class="music">
+                    <text class="music_txt1">{{item.name}}</text>
+                    <text class="music_txt2">{{item.ar[0].name}}-{{item.al.name}}</text>
+                </view>
+                <text class="icon-ellipsis-v"></text>
+            </view>
+            <view class="al">已经到底了</view>
+        </view>
+    </view>
+</scroll-view>

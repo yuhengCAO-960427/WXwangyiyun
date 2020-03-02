@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/movic/movic",
+    "pages/seach/search",
+    "pages/login/login",
+    "pages/icon/icon",
+    "pages/conment/conment"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#999", 
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance":50
+   
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor":"#ff7500",
+    "backgroundColor":"#999",
+    "list": [
+      
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath":"assets/tabbars/home.png",
+        "selectedIconPath":"assets/tabbars/home-active.png"
+      },
+      {
+        "pagePath": "pages/seach/search",
+        "text": "发现",
+        "iconPath": "assets/tabbars/profile.png",
+        "selectedIconPath": "assets/tabbars/profile-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "云村"
+      },
+      {
+        "pagePath": "pages/movic/movic",
+        "text": "视频"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,144 @@
+<scroll-view>
+  <view class="box" wx:if="{{flag}}">
+    <view class="img">
+      <!-- 头像 -->
+      <image src="../../images/logo.png" class="login_img"></image>
+    </view>
+    <view class="login_txt">登录立享手机电脑多端同步</view>
+    <view class="login_btn" bindtap="handelLogin">
+      <text class="btn">立即登录</text>
+    </view>
+    <view class="nav">
+      <view class="nav_bar">
+        <text class="icon-folder-download"></text>
+        下载管理
+      </view>
+      <view class="nav_bar">
+        <text class="icon-podcast"></text>
+        我的电台
+      </view>
+      <view class="nav_bar">
+        <text class="icon-star-full"></text>
+        我的收藏
+      </view>
+      <view class="nav_bar">
+        <text class="icon-music"></text>
+        关注新歌
+      </view>
+    </view>
+    <view class="box_body">
+      <view class="body_txt">
+        <text class="music  icon-point-right">我的音乐</text>
+        <text class="icon-chevron-right"></text>
+      </view>
+      <view class="body_love">
+        <view class="body_lovely">
+          <text class="icon-heart"></text>
+          <text class="herat_txt">我喜欢的音乐</text>
+          <text class="icon-play3">心动模式</text>
+        </view>
+        <view class="body_FM">
+          <text class="icon-dice"></text>
+          <text class="herat_txt">私人FM</text>
+          <text class="fm_txt">你的私人曲库</text>
+        </view>
+        <view class="body_Hi">
+          <text class="icon-evil"></text>
+          <text class="pink_txt">最嗨电音</text>
+          <text class="pink__txt">专业电音品台</text>
+        </view>
+        <view class="body_Acg">
+          <text class="icon-subscript2"></text>
+          <text class="pink_txt">ACG专区</text>
+          <text class="pink__txt">好听好玩ACG</text>
+        </view>
+      </view>
+      <view class="music_reco">
+        <view class="body_txt">
+          <text class="music  icon-point-right">推荐歌单</text>
+          <text class="icon-chevron-right"></text>
+        </view>
+        <view class="music_tj">
+          <view class="music_list" wx:for="{{list}}" wx:key="item.id">
+            <navigator class="navigat" url="../conment/conment?id={{item.id}}">
+              <image src="{{item.picUrl}}" class="music_img"></image>
+              <text class="mus_txt">{{item.name}}</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view></view>
+  </view>
+</scroll-view>
+<!-- yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy -->
+<view wx:if="{{flags}}" class="box">
+  <view class="img">
+    <!-- 头像 -->
+    <image src="{{msg.avatarUrl}}" class="login_img"></image>
+  </view>
+  <view class="login_txt">{{msg.nickname}}</view>
+  <view class="login_btn" bindtap="handelOut">
+    <text class="btn">退出登录</text>
+  </view>
+  <view class="nav">
+    <view class="nav_bar">
+      <text class="icon-folder-download"></text>
+      下载管理
+    </view>
+    <view class="nav_bar">
+      <text class="icon-podcast"></text>
+      我的电台
+    </view>
+    <view class="nav_bar">
+      <text class="icon-star-full"></text>
+      我的收藏
+    </view>
+    <view class="nav_bar">
+      <text class="icon-music"></text>
+      关注新歌
+    </view>
+  </view>
+  <view class="box_body">
+    <view class="body_txt">
+      <text class="music  icon-point-right">我的音乐</text>
+      <text class="icon-chevron-right"></text>
+    </view>
+    <view class="body_love">
+      <view class="body_lovely">
+        <text class="icon-heart"></text>
+        <text class="herat_txt">我喜欢的音乐</text>
+        <text class="icon-play3">心动模式</text>
+      </view>
+      <view class="body_FM">
+        <text class="icon-dice"></text>
+        <text class="herat_txt">私人FM</text>
+        <text class="fm_txt">你的私人曲库</text>
+      </view>
+      <view class="body_Hi">
+        <text class="icon-evil"></text>
+        <text class="pink_txt">最嗨电音</text>
+        <text class="pink__txt">专业电音品台</text>
+      </view>
+      <view class="body_Acg">
+        <text class="icon-subscript2"></text>
+        <text class="pink_txt">ACG专区</text>
+        <text class="pink__txt">好听好玩ACG</text>
+      </view>
+    </view>
+    <view class="music_reco">
+      <view class="body_txt">
+        <text class="music  icon-point-right">推荐歌单</text>
+        <text class="icon-chevron-right"></text>
+      </view>
+      <view class="music_tj">
+        <view class="music_list" wx:for="{{list}}" wx:key="item.id" bindtop="handelConment">
+        <navigator class="navigat" url="../conment/conment?id={{item.id}}">
+          <image src="{{item.picUrl}}" class="music_img"></image>
+          <text class="mus_txt">{{item.name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

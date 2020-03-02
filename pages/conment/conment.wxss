@@ -1,0 +1,189 @@
+.box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(209, 205, 205);
+}
+.box_header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+.header_img{
+   height: 300rpx;
+   width: 300rpx;
+   margin-left: 40rpx;
+   margin-top: 40rpx;
+   position: relative;
+}
+.img{
+  height:260rpx;
+  width: 260rpx;
+  border-radius: 10px;
+}
+.icon-play1{
+    color: white;
+    font-size: 28rpx;
+    display: block;
+    position: absolute;
+    top: 20rpx;
+    right: 60rpx;
+    opacity: 0.8;
+}
+.herder_txt{
+    flex: 1;
+    margin-right: 30rpx;
+}
+.conment_txt{
+    font-size: 40;
+    height: 80rpx;
+    color: white;
+    display: block;
+    margin-top: 40rpx;
+}
+.conment_img{
+     height: 60rpx;
+    width: 60rpx;
+    margin-top: 40rpx;
+    position: relative;
+}
+.conment_imgs{
+    height: 60rpx;
+    width: 60rpx;
+    border-radius: 50%;
+}
+.conment_txts{
+    font-size: 30rpx;
+    color: white;
+    display: block;
+    position: absolute;
+    top:12rpx;
+    right: -100rpx;
+     width: 100%; 
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  
+    -webkit-box-orient: vertical;  
+    overflow: hidden; 
+}
+.comment{
+    color: white;
+    font-size: 28rpx;
+    width: 100%; /*必须设置宽度*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-top: 23rpx;
+}
+.box_body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 236, 236);
+    border: 1rpx solid rgb(240, 236, 236);
+    border-top-left-radius: 40rpx;
+    border-top-right-radius: 40rpx;
+}
+.start{
+    margin-left: 40rpx;
+    font-size: 38rpx;
+    margin-top: 20rpx;
+}
+.start_txt{
+    display: inline-block;
+    margin-left: 40rpx;
+}
+.start_all{
+    font-size:32rpx ;
+    color: rgb(201, 190, 190);
+}
+.start_sc{
+    display: inline-block;
+    margin-left: 100rpx;
+    height: 60rpx;
+    width: 240rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border: 1rpx solid red;
+    background-color: red;
+    color: white;
+    font-size: 28rpx;
+    border-radius: 40rpx;
+}
+.body_conment{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 20rpx;
+}
+.number{
+    display: inline-block;
+    width: 45rpx;
+    height: 45rpx;
+    line-height: 100%;
+    text-align: center;
+    font-size: 36rpx;
+    margin-left: 35rpx;
+   /* border: 1rpx solid red; */
+   margin-top:22.5rpx ;
+}
+.music{
+    height: 90rpx;
+    flex: 1;
+    /* border: 1rpx solid blue; */
+    margin-left: 45rpx;
+    display: flex;
+    flex-direction: column;
+}
+.music_txt1{
+    flex: 1;
+    font-size: 34rpx;
+    width: 90%; /*必须设置宽度*/
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.music_txt2{
+    flex: 1;
+    font-size: 30rpx;
+    color: rgb(182, 177, 177);
+    width: 90%; /*必须设置宽度*/
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+
+}
+.icon-ellipsis-v{
+    font-size: 50rpx;
+    display: inline-block;
+    height:90rpx;
+    line-height: 90rpx;
+    margin-right: 40rpx;
+    color: rgb(182, 177, 177);
+}
+.fx{
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+   margin-top: 15px;
+   color: white;
+}
+.fx_bar {
+  flex: 1;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 24rpx;
+}
+.fx_txt{
+  display: block;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 40rpx;
+}
+.al{
+    text-align: center;
+}

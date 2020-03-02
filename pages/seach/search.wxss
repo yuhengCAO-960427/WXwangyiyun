@@ -1,0 +1,4 @@
+/* pages/seach/search.wxss */
+.data{
+    margin-top: 20rpx;
+}

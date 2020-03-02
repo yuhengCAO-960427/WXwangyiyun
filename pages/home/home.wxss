@@ -1,0 +1,13 @@
+
+
+.img {
+    width: 200rpx;
+    height: 200rpx;
+    border: 5rpx solid red;
+    border-radius: 50%;
+}
+.bg_color {
+    width: 1000rpx;
+    height: 600rpx;
+    filter:blur(4px);
+}

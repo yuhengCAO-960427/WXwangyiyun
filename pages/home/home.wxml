@@ -1,0 +1,8 @@
+<scroll-view>
+    <view  class="playerBox"> 
+        
+        <image src="{{userInfo.avatarUrl}}" class="img"></image>
+        <image src="{{userInfo.avatarUrl}}" class="bg_color"></image>
+    </view>
+    
+</scroll-view>
